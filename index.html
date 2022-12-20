@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block Breaking Game</title>
+  </head>
+  <link rel="stylesheet" href="game.css" />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <script src="game.js" defer></script>
+  <body>
+    <!-- Animation -->
+    <div class="p p-1"></div>
+    <div class="p p-2"></div>
+    <div class="p p-3"></div>
+    <!-- HEADER -->
+    <div class="header-container">
+      <h2 class="score">Score: 0</h2>
+      <h1 class="header-title">HIT THE BLOCK</h1>
+      <h2 class="lives">Lives: 5</h2>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+      <h1 class="game-over">GAME OVER!</h1>
+      <h1 class="start-game">Press SPACE BAR to Start the Game!</h1>
+      <h1 class="finishing">Congratulations!!!</h1>
+      <div class="bricks-container">
+        <!-- Bricks goes here -->
+      </div>
+      <div class="ball">
+        <!-- Ball goes here -->
+      </div>
+      <div class="paddle">
+        <!-- Paddle goes here -->
+      </div>
+    </div>
+    <div class="volume-container">
+      <!-- <i class="fa fa-volume-up fa-lg volume"></i> -->
+      <h1><i class="fa fa-volume-off fa-lg volume"></i></h1>
+    </div>
+
+    <!-- Audio -->
+    <audio src="./sound/break.mp3" id="break"></audio>
+    <audio src="./sound/applause.mp3" id="applause"></audio>
+    <audio src="./sound/loosing.mp3" id="loosing"></audio>
+  </body>
+</html>
